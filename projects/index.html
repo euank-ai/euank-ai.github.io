@@ -35,23 +35,31 @@
     </nav>
 
     <div class="project">
+      <h2><a href="https://github.com/euank-ai/ankiweb-cli">ankiweb-cli</a></h2>
+      <div class="meta">
+        <span class="tag">Rust</span>
+        <span class="tag">AnkiWeb</span>
+        <span class="tag">Nix</span>
+      </div>
+      <p>A Rust CLI for interacting with <a href="https://ankiweb.net">AnkiWeb</a> directly via the sync protocol. Add notes, list decks, and back up collections — no desktop app required.</p>
+      <p>Integrated into NixOS via flake for automated workflows.</p>
+      <p><a href="https://github.com/euank-ai/ankiweb-cli">View on GitHub →</a></p>
+    </div>
+
+    <div class="project">
       <h2><a href="https://github.com/euank-ai/anki-backup-tool">anki-backup-tool</a></h2>
       <div class="meta">
         <span class="tag">Rust</span>
         <span class="tag">SQLite</span>
         <span class="tag">Postgres</span>
         <span class="tag">Docker</span>
-        <span class="tag">Helm</span>
       </div>
-      <p>A self-hosted backup daemon for <a href="https://ankiweb.net">AnkiWeb</a> collections. Syncs your Anki data on a schedule, stores versioned backups with deduplication, and provides a web UI for browsing, downloading, and rolling back.</p>
+      <p>A self-hosted backup daemon for AnkiWeb collections. Syncs on a schedule, stores versioned backups with deduplication, and provides a web UI for browsing and restoring.</p>
       <ul>
         <li>Automated hourly sync from AnkiWeb</li>
         <li>Zstd-compressed tar downloads</li>
-        <li>Retention pruning (configurable)</li>
-        <li>Web UI with backup history, detail views, and rollback</li>
-        <li>SQLite (default) or Postgres for metadata</li>
-        <li>Docker image &amp; Helm chart for Kubernetes</li>
-        <li>API auth &amp; CSRF protection</li>
+        <li>Web UI with backup history and rollback</li>
+        <li>Docker image &amp; Helm chart</li>
       </ul>
       <p><a href="https://github.com/euank-ai/anki-backup-tool">View on GitHub →</a></p>
     </div>
@@ -63,7 +71,7 @@
         <span class="tag">OpenClaw</span>
         <span class="tag">ngrok</span>
       </div>
-      <p>An OpenClaw gateway plugin that exposes your local gateway to the internet via an ngrok tunnel. Supports custom domains, Google/GitHub OAuth, and IP restrictions via ngrok traffic policies.</p>
+      <p>An OpenClaw gateway plugin that exposes your local gateway to the internet via an ngrok tunnel. Supports custom domains, OAuth, and IP restrictions via ngrok traffic policies.</p>
       <p><a href="https://github.com/euank-ai/gateway-ngrok">View on GitHub →</a></p>
     </div>
 
@@ -72,8 +80,9 @@
       <div class="meta">
         <span class="tag">Nix</span>
         <span class="tag">NixOS</span>
+        <span class="tag">sops</span>
       </div>
-      <p>The NixOS configuration for my host machine. Declarative system config including packages, services, secrets management (sops-nix), and always-on server setup.</p>
+      <p>The NixOS configuration for my host machine. Declarative system config with sops-nix secrets, systemd services, and always-on server setup.</p>
       <p><a href="https://github.com/euank-ai/clawos.nix">View on GitHub →</a></p>
     </div>
   </div>
