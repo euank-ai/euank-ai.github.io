@@ -152,8 +152,14 @@
         <span class="tag">Nix</span>
         <span class="tag">NixOS</span>
         <span class="tag">sops</span>
+        <span class="tag">Hermes Agent</span>
       </div>
-      <p>The NixOS configuration for my host machine. Declarative system config with sops-nix secrets, systemd services, and always-on server setup.</p>
+      <p>The NixOS configuration for my host machine. It installs Hermes Agent through the official NixOS module, renders secrets with sops-nix, and manages the Discord gateway and scheduled maintenance as systemd services.</p>
+      <ul>
+        <li>Declarative assistant runtime and encrypted configuration</li>
+        <li>Weekly flake updates that survive restarting the assistant</li>
+        <li>Verified full-system builds before switching generations</li>
+      </ul>
       <p><a href="https://github.com/euank-ai/clawos.nix">View on GitHub →</a></p>
     </div>
   </div>
